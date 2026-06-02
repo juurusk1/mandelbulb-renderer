@@ -1,30 +1,16 @@
 import pygame
 import moderngl
 import numpy as np
-from config import PALETTES
+import config
 
 # Window settings
 
 WIDTH = 1800
 HEIGHT =  WIDTH / 4 * 3 
 
-CONFIG = {
-    "MAX_ITERATIONS": 40,
-    "MIN_ITERATIONS": 15,
-    "DE_POWER": 8.0,
-    "DE_POWER_SCALE": 0.5,
-    "FOV": 80.0,
-    "ASPECT": WIDTH / HEIGHT,
-    "RAYMARCH_EPSILON": 1e-5,
-    "NORMAL_EPSILON": 0.001,
-}
-
-PALETTE = PALETTES["cosmic"]
-
-MOUSE_CONFIG = {
-    "sensitivity": 0.03,
-    "zoom_speed": 0.023
-}
+PALETTE = config.PALETTES["forest"]
+CONFIG = config.CONFIG
+MOUSE_CONFIG = config.MOUSE_CONFIG
 
 pygame.init()
 
